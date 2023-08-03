@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.nav-bar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-bar--container{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 80px;
+    z-index: 1;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar--logo{
+    color: #131313;
+    background-color: #ff1230;
+    background-image: linear-gradient(to top, black 0%, red 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    -moz-animation: text; 
+    animation: none;
+    -moz-text-fill-color: transparent;
+    -web-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar--menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar--links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+   height: 100%;
+}
+
+.nav-bar--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   padding: 10px 20px;
+   height: 100%;
+   width: 100%;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+   background: #131313;
+   color: #fff;
+}
+
+.navbar--links:hover{
+    color: #ff1230;
+    transition: all 0.3s ease;
+
+}
+
+
+@media  screen and (max-width: 960px) {
+    .nav-bar--container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+
+.navbar--menu{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+}
+
+.navbar--menu.active{
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+}
+
+
+#navbar--logo{
+    margin-left: 25px;
+}
+
+.navbar--toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+.nav-bar--item{
+    width: 100%;
+}
+
+.navbar--links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+}
+
+#mobile-menu{
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
